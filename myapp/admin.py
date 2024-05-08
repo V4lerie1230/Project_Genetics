@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Mutation
+from .models import Mutation, Diseases
 
 # Register your models here.
 
@@ -8,3 +8,6 @@ class MutationAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(Diseases)
+class DiseasesAdmin(admin.ModelAdmin):
+    pass
