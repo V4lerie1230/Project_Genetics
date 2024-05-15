@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Mutation, Diseases
+from .models import Mutation, Diseases, GeneticCrossing
 
 # Register your models here.
 
@@ -13,6 +13,9 @@ class DiseasesAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(GeneticCrossing)
+class GeneticCrossingAdmin(admin.ModelAdmin):
+    pass
 
 
 
