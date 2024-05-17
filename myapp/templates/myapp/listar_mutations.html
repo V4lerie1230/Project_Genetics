@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Mutaciones</title>
+</head>
+<body>
+    <h1>Lista de Mutaciones</h1>
+    <ul>
+        {% for mutation in mutations %}
+            <li>{{ mutation.name }}: {{ mutation.secuence }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
