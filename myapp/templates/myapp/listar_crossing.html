@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de cruzamientos geneticos</title>
+</head>
+<body>
+    <h1>Lista de cruzamientos geneticos</h1>
+    <ul>
+        {% for crossing in crossing %}
+            <li>{{ crossing.first_name }}: {{ crossing.second_name }}: {{ crossing.result }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

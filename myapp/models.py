@@ -19,3 +19,11 @@ class Diseases(models.Model):
 
     def __str__(self):
         return self.name
+
+class Crossing(models.Model):
+    first_name = models.CharField(max_length=30)
+    second_name = models.CharField(max_length=30) 
+    result = models.CharField(max_length=30) 
+
+    def __str__(self):
+        return self.first_name
