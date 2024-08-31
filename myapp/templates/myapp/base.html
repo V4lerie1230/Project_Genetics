@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {% block title %}
-      <title>Farmacia</title>
+      <title>Genetics</title>
     {% endblock %}
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,9 @@
   </head>
   <body>
 
-    {% block subtitle %}
-    <div class ="text-center">Aqui va el titulo</div>
+    <div class="text-center p-3 mb-2 bg-success text-white">{% block subtitle %} Genetics  {% endblock %}</div>
       
-    {% endblock %}
+  
 
 
     {% include "myapp/base_nav.html" %}

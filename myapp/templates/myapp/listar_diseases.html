@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Lista de Enfermedades</title>
-</head>
-<body>
+{% extends "myapp/base.html" %}
+
+{% block subtitle %}
+    Diseases
+
+{% endblock %}
+
+{% block content %}
     <h1>Lista de Enfermedades</h1>
     <ul>
         {% for diseases in diseases %}
             <li>{{ diseases.name }}: {{ diseases.probability }}: {{ diseases.probability }}</li>
         {% endfor %}
-    </ul>
-</body>
-</html>
 
+
+
+        {% endblock %}
