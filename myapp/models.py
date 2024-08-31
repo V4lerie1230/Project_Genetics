@@ -11,7 +11,6 @@ class Mutation(models.Model):
         return self.name
 
 
-
 class Diseases(models.Model):
     name = models.CharField(max_length=30)
     probability = models.CharField(max_length=30) 
